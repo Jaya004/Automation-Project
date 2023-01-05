@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="226.975169">
+    <testcase classname="To validate the login functionality in Bisto bites application" name="To validate the login invalid “User name” and “password”" time="72.414324">
+        <system-out><![CDATA[Given To click the Account button...........................................passed
+When To enter wrong Username and Password...................................passed
+And To click the login button...............................................passed
+And To check the output invalid Mobile No...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="" name="The User successfully add the Dosa" time="40.900706">
+        <system-out><![CDATA[Given To click the Home in Bisto bites application..........................passed
+When To dropdown labeled dosa page..........................................passed
+And To click the dosa button................................................passed
+And Select the masala dosa option...........................................passed
+And To check the page in available time.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="" name="The user fills out the registration form and ignores the confirm password" time="30.599768">
+        <system-out><![CDATA[Given User and on the home page.............................................passed
+When To Click the account button............................................passed
+And Fill out the registration form with dummy data..........................passed
+And Skip the confirm password text label....................................passed
+And Click the register button...............................................passed
+And Get the pop-up Please fill out the field................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="" name="The user search for the “Coke” can and check the price" time="24.5499">
+        <system-out><![CDATA[Given Click the search icon.................................................passed
+When To search Coke and check the can dollar is $ 1.50......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="" name="The user selects the Spanish Omelet" time="29.021118">
+        <system-out><![CDATA[Given Click the search icon in appl.........................................passed
+When Find out the Spanish Omelet and Click the icon.........................passed
+And Select the option by probability........................................passed
+And Check the dollar probability............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="" name="The user read our story" time="29.489353">
+        <system-out><![CDATA[Given Click the our story option appl.......................................passed
+When Check the spelling mistake.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

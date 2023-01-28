@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="226.975169">
-    <testcase classname="To validate the login functionality in Bisto bites application" name="To validate the login invalid “User name” and “password”" time="72.414324">
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="320.504476">
+    <testcase classname="To validate the login functionality in Bisto bites application" name="To validate the login invalid “User name” and “password”" time="99.033841">
         <system-out><![CDATA[Given To click the Account button...........................................passed
 When To enter wrong Username and Password...................................passed
 And To click the login button...............................................passed
 And To check the output invalid Mobile No...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="" name="The User successfully add the Dosa" time="40.900706">
-        <system-out><![CDATA[Given To click the Home in Bisto bites application..........................passed
-When To dropdown labeled dosa page..........................................passed
-And To click the dosa button................................................passed
-And Select the masala dosa option...........................................passed
-And To check the page in available time.....................................passed
-]]></system-out>
+    <testcase classname="" name="The User successfully add the Dosa" time="38.70297">
+        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li id=&quot;menu-item-14249&quot; class=&quot;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item current-menu-ancestor current-menu-parent menu-item-14249&quot;&gt;...&lt;/li&gt; is not clickable at point (273, 49). Other element would receive the click: &lt;div id=&quot;lte-preloader&quot; data-loader=&quot;Loading...&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=109.0.5414.75)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b4f7153e231eb2a66ffffe15f26f7774&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at org.samp.BaseClass.clickBtn(BaseClass.java:62)&#13;&#10;&#9;at org.stepdefinition.AutomationProject1.to_click_the_Home_in_Bisto_bites_application(AutomationProject1.java:17)&#13;&#10;&#9;at ✽.To click the Home in Bisto bites application(src/test/resources/AutomationProject2.feature:4)&#13;&#10;"><![CDATA[Given To click the Home in Bisto bites application..........................failed
+When To dropdown labeled dosa page..........................................skipped
+And To click the dosa button................................................skipped
+And Select the masala dosa option...........................................skipped
+And To check the page in available time.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li id="menu-item-14249" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item current-menu-ancestor current-menu-parent menu-item-14249">...</li> is not clickable at point (273, 49). Other element would receive the click: <div id="lte-preloader" data-loader="Loading..."></div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4f7153e231eb2a66ffffe15f26f7774
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at org.samp.BaseClass.clickBtn(BaseClass.java:62)
+	at org.stepdefinition.AutomationProject1.to_click_the_Home_in_Bisto_bites_application(AutomationProject1.java:17)
+	at ✽.To click the Home in Bisto bites application(src/test/resources/AutomationProject2.feature:4)
+]]></failure>
     </testcase>
-    <testcase classname="" name="The user fills out the registration form and ignores the confirm password" time="30.599768">
+    <testcase classname="" name="The user fills out the registration form and ignores the confirm password" time="52.898007">
         <system-out><![CDATA[Given User and on the home page.............................................passed
 When To Click the account button............................................passed
 And Fill out the registration form with dummy data..........................passed
@@ -24,21 +51,75 @@ And Click the register button...............................................pass
 And Get the pop-up Please fill out the field................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="" name="The user search for the “Coke” can and check the price" time="24.5499">
+    <testcase classname="" name="The user search for the “Coke” can and check the price" time="46.370568">
         <system-out><![CDATA[Given Click the search icon.................................................passed
 When To search Coke and check the can dollar is $ 1.50......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="" name="The user selects the Spanish Omelet" time="29.021118">
-        <system-out><![CDATA[Given Click the search icon in appl.........................................passed
+    <testcase classname="" name="The user selects the Spanish Omelet" time="38.984742">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=109.0.5414.75)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 284f448a065a4ae950d2c7fe7b07233d&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at org.samp.BaseClass.clickBtn(BaseClass.java:62)&#13;&#10;&#9;at org.stepdefinition.AutomationProject4.select_the_option_by_probability(AutomationProject4.java:37)&#13;&#10;&#9;at ✽.Select the option by probability(src/test/resources/AutomationProject5.feature:7)&#13;&#10;"><![CDATA[Given Click the search icon in appl.........................................passed
 When Find out the Spanish Omelet and Click the icon.........................passed
-And Select the option by probability........................................passed
-And Check the dollar probability............................................passed
-]]></system-out>
+And Select the option by probability........................................failed
+And Check the dollar probability............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 284f448a065a4ae950d2c7fe7b07233d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at org.samp.BaseClass.clickBtn(BaseClass.java:62)
+	at org.stepdefinition.AutomationProject4.select_the_option_by_probability(AutomationProject4.java:37)
+	at ✽.Select the option by probability(src/test/resources/AutomationProject5.feature:7)
+]]></failure>
     </testcase>
-    <testcase classname="" name="The user read our story" time="29.489353">
-        <system-out><![CDATA[Given Click the our story option appl.......................................passed
-When Check the spelling mistake.............................................passed
-]]></system-out>
+    <testcase classname="" name="The user read our story" time="44.514348">
+        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li id=&quot;menu-item-3557&quot; class=&quot;menu-item menu-item-type-custom menu-item-object-custom  menu-item-3557&quot;&gt;...&lt;/li&gt; is not clickable at point (442, 49). Other element would receive the click: &lt;div id=&quot;lte-preloader&quot; data-loader=&quot;Loading...&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=109.0.5414.75)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b9cc9ad6b20b8f412067a233daf803e8&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at org.samp.BaseClass.clickBtn(BaseClass.java:62)&#13;&#10;&#9;at org.stepdefinition.AutomationProject5.click_the_our_story_option_appl(AutomationProject5.java:18)&#13;&#10;&#9;at ✽.Click the our story option appl(src/test/resources/AutomationProject6.feature:4)&#13;&#10;"><![CDATA[Given Click the our story option appl.......................................failed
+When Check the spelling mistake.............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li id="menu-item-3557" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-3557">...</li> is not clickable at point (442, 49). Other element would receive the click: <div id="lte-preloader" data-loader="Loading..."></div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GANESH', ip: '192.168.205.40', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b9cc9ad6b20b8f412067a233daf803e8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at org.samp.BaseClass.clickBtn(BaseClass.java:62)
+	at org.stepdefinition.AutomationProject5.click_the_our_story_option_appl(AutomationProject5.java:18)
+	at ✽.Click the our story option appl(src/test/resources/AutomationProject6.feature:4)
+]]></failure>
     </testcase>
 </testsuite>
